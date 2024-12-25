@@ -1,0 +1,97 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "On Screen Detector",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1513176960141x358663935912773000/visibility.png",
+    "events": {
+        "AAw": {
+            "caption": "Enters screen",
+            "doc": "Triggers when element enters viewport",
+            "name": "enters_viewport"
+        },
+        "AAx": {
+            "caption": "Exits screen",
+            "doc": "Triggers when element exits viewport",
+            "name": "exits_viewport"
+        }
+    },
+    "fields": {
+        "AAZ": {
+            "caption": "Element ID",
+            "default_val": "This",
+            "doc": "ID to detect ",
+            "editor": "StaticText",
+            "name": "element_id",
+            "rank": 0
+        },
+        "AAb": {
+            "caption": "Set this to the ID of the element you want to detect. Leave it as \"This\" to detect this Visible Detector.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 1
+        },
+        "AAy": {
+            "caption": "Threshold",
+            "default_val": 0,
+            "doc": "Set the ratio of an element's height and width that needs to be visible for it to be considered in viewport. This defaults to 0, meaning any amount. A threshold of 0.5 or 1 will require that half or all, respectively, of an element's height and width need to be visible. threshold must be a number between 0 and 1.",
+            "editor": "StaticNumber",
+            "name": "threshold",
+            "rank": 2
+        },
+        "AAz": {
+            "caption": "Offsets",
+            "editor": "Label",
+            "name": "offsets",
+            "rank": 3
+        },
+        "ABA": {
+            "caption": "Top",
+            "default_val": 0,
+            "doc": "Top offset in pixels",
+            "editor": "StaticNumber",
+            "name": "top",
+            "rank": 4
+        },
+        "ABB": {
+            "caption": "Bottom",
+            "default_val": 0,
+            "doc": "Bottom offset in pixels",
+            "editor": "StaticNumber",
+            "name": "bottom",
+            "rank": 5
+        },
+        "ABC": {
+            "caption": "Left",
+            "default_val": 0,
+            "doc": "Left offset in pixels",
+            "editor": "StaticNumber",
+            "name": "left",
+            "rank": 6
+        },
+        "ABD": {
+            "caption": "Right",
+            "default_val": 0,
+            "doc": "Right offset in pixels",
+            "editor": "StaticNumber",
+            "name": "right",
+            "rank": 7
+        }
+    },
+    "icon": "ion-eye",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAa": {
+            "caption": "Is On Screen",
+            "doc": "Element is visible, yes/no",
+            "name": "is_visible",
+            "value": "boolean"
+        }
+    }
+}

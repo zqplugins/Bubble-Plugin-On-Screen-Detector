@@ -1,0 +1,16 @@
+{
+    "assets": {
+        "AAv": {
+            "name": "in-view",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1513363062221x138670728076249360/in-view.min.js"
+        },
+        "ABN": {
+            "name": "inview2",
+            "url": "//meta-q.cdn.bubble.io/f1720626465286x914878848304398300/inview222.js"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": "4",
+        "use_jquery": true
+    }
+}
